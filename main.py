@@ -29,9 +29,14 @@ def fit_circle(x, y):
     a_opt, b_opt, r_opt = result.x
     return a_opt, b_opt, r_opt
 
-# Example usage
-x = np.array([1, 2, 3, 4, 5])
-y = np.array([2, 3, 4, 5, 6])
+def main():
+    # Example usage
+    x = np.array([1, 2, 3, 4, 5])
+    y = np.array([2, 3, 4, 5, 6])
 
-a, b, r = fit_circle(x, y)
-print(f"Center: ({a}, {b}), Radius: {r}")
+    a, b, r = fit_circle(x, y)
+    print(f"Center: ({a}, {b}), Radius: {r}")
+
+if __name__ == "__main__":
+    main()
+
